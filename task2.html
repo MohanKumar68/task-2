@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangam Serenity Resort</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="task22.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="overlay">
+            <h1>Welcome to Sangam Serenity Resort</h1>
+            <p>Relax, Unwind & Enjoy</p>
+            <a href="#contact" class="btn">Book Now</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Experience ultimate luxury and comfort at our beachfront resort.</p>
+    </section>
+
+    <!-- Amenities Section with Slideshow -->
+    <section id="amenities" class="section">
+        <h2>Amenities</h2>
+        <div class="amenities-grid" id="slideshow">
+            <div class="amenity-item" style="display: block;">
+                <img src="https://images.unsplash.com/photo-1521750465-672a0f580901?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5maW5pdHklMjBwb29sfGVufDB8fDB8fHww" alt="Infinity Pool" class="amenity-image">
+                <h3>Infinity Pool</h3>
+                <p>Stunning ocean views</p>
+            </div>
+            <div class="amenity-item" style="display: none;">
+                <img src="https://www.resortrio.com/wp-content/uploads/2023/06/2I2A9993.jpg" alt="Luxury Spa" class="amenity-image">
+                <h3>Luxury Spa</h3>
+                <p>Relaxing treatments</p>
+            </div>
+            <div class="amenity-item" style="display: none;">
+                <img src="https://images.unsplash.com/photo-1564406455483-8fe84dd34096?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fGdvdW1lbnQlMjBkaW5uaW5nfGVufDB8fDB8fHww" alt="Gourmet Dining" class="amenity-image">
+                <h3>Gourmet Dining</h3>
+                <p>Delicious cuisine</p>
+            </div>
+            <div class="amenity-item" style="display: none;">
+                <img src="https://plus.unsplash.com/premium_photo-1682871360779-e8f1f77123ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGl2ZSUyMG11c2ljJTIwaW4lMjByZXNvcnR8ZW58MHx8MHx8fDA%3D" alt="Live Entertainment" class="amenity-image">
+                <h3>Live Entertainment</h3>
+                <p>Enjoy live music and performances</p>
+            </div>
+            
+        </div>
+        <button onclick="showNextAmenity()">Next</button>
+    </section>
+    
+
+    <!-- Contact Section with Form -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <!-- Link to external JavaScript file -->
+    <script src="task222.js"></script>
+</body>
+</html>
